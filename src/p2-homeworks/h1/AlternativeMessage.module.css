@@ -1,0 +1,53 @@
+.wrap {
+    width: 250px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 5px 5px 0 5px;
+  }
+  .name {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 180px;
+    padding-top: 5px;
+  }
+  .message {
+    color: white;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 200px;
+  }
+  .time {
+    color: rgba(255, 255, 255, 0.459);
+    padding-left: 12px;
+  }
+  .ava img {
+    padding-top: 10px;
+    width: 50px;
+    border-radius: 100%;
+    
+  }
+  .container {
+    display: flex;
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+  }
+  .triangle {
+    width: 40px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-top: auto;
+  }
+  .round {
+      width: 40px;
+      height: 35px;
+      background-color: white;
+      margin-bottom: 0px;
+      margin-top: auto;
+      border-radius: 0 0 0 100% ;
+  }
+  
