@@ -1,4 +1,6 @@
 import React, { ChangeEvent } from "react";
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import s from "./Greeting.module.css";
 
 type GreetingPropsType = {
@@ -16,9 +18,9 @@ function Greeting(props: GreetingPropsType) {
 
     return (
         <div>
-            <input value={props.name} onChange={props.setNameCallback} className={props.error ?inputClass : ""} />
+            <SuperInputText value={props.name} onChange={props.setNameCallback} className={props.error ?inputClass : ""} />
             {props.error && <span className={s.errorMessage}>{props.error}</span>}
-            <button onClick={props.addUser}>add</button>
+            <SuperButton onClick={props.addUser}>add</SuperButton>
             <span className={s.totalCount}>{props.totalUsers}</span>
         </div>
     );

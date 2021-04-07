@@ -2,6 +2,22 @@
 
 }
 
-.red {
-    background: red;
+.btnStyle {
+    border: black 1px solid;
+    margin-left: 5px;
+    background-color: rgb(175, 243, 255);
+    border-radius: 5px;
+    border:none;
+    box-shadow: 2px 2px 4px black;
+}
+.btnStyle:hover {
+background-color: aquamarine;
+transform: scale(1.2);
+
+}
+.btnStyle:focus {
+    outline: none;
+}
+.btnStyle:active {
+    background-color: cornflowerblue;
 }

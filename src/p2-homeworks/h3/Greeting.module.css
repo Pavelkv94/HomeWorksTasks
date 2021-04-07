@@ -3,7 +3,8 @@
 }
 
 .error {
-    border: 1px solid red;
+    border: 2px solid red;
+    background-color: rgb(255, 188, 188);
 }
 .errorMessage {
     color: red;
