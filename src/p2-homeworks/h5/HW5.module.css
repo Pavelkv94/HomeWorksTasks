@@ -1,3 +1,7 @@
+.page {
+    position: relative;
+}
+
 .navContainer {
     display: flex;
     justify-content: space-around;
@@ -6,10 +10,20 @@
     background-color: rgb(162, 255, 255);
     align-items: center;
     position: relative;
+    transform: translate(0, -200px);
+    transition: 1s;
 }
 
 .disable {
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100vw;
+    background-color: rgb(162, 255, 255);
+    align-items: center;
+    position: relative;
+    transform: translate(0, 0);
+    transition: 0.5s;
 }
 
 .item {
@@ -29,14 +43,14 @@
     background-color: rgb(228, 228, 228);
 }
 
-.item a {
+.item {
     text-decoration: none;
-    color: rgb(8, 123, 255);
+    color: rgb(156, 8, 255);
 }
 
 .active {
-    font-size: 1.05em;
     font-style: italic;
+    background-color: rgb(162, 255, 177);
 }
 
 .btn {
@@ -49,6 +63,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5em;
     cursor: pointer;
+    transform: translate(0, 0x);
+    transition: 0.5s;
 }
 
 .btn:hover {
@@ -61,4 +77,9 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.btnUp {
+    transform: translate(0, -50px);
+    transition: 0.5s;
 }

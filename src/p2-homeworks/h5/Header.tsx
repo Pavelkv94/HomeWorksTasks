@@ -8,17 +8,17 @@ type HeaderType = {
 
 
 function Header() {
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false);
 
-    return (<div>
+    return (<div className={s.page}>
         <nav className={menu ? s.navContainer : s.disable}>
-            <div className={s.item} ><NavLink to="/pre-junior" activeClassName={s.active}> Pre-Junior</NavLink></div>
-            <div className={s.item} ><NavLink to="/junior" activeClassName={s.active}> Junior</NavLink></div>
-            <div className={s.item} ><NavLink to="/junior-plus" activeClassName={s.active}> Junior-Plus</NavLink></div>
-            <div className={`${s.item} ${s.error}`} ><NavLink to="/error" activeClassName={s.active}> Error</NavLink></div>
+            <NavLink to="/pre-junior" className={s.item} activeClassName={`${s.active}`}> Pre-Junior</NavLink>
+            <NavLink to="/junior" className={s.item} activeClassName={s.active}> Junior</NavLink>
+            <NavLink to="/junior-plus" className={s.item} activeClassName={s.active}> Junior-Plus</NavLink>
+            <NavLink to="/error" activeClassName={s.active} className={`${s.item} ${s.error}`}> Error</NavLink>
         </nav>
         <div className={s.btnContainer}>
-            <button onClick={() => { setMenu(!menu) }} className={s.btn}>&#8679; Menu &#8679;</button>
+            <button onClick={() => { setMenu(!menu) }} className={!menu ? s.btn : `${s.btn} ${s.btnUp}`}>{arrow(menu)} Menu{arrow(menu)}</button>
         </div>
         <hr />
     </div>
@@ -26,3 +26,9 @@ function Header() {
 }
 
 export default Header;
+
+const arrow = (menu: boolean) => {
+    return (menu
+        ? <span>&#8659;</span>
+        : <span>&#8657;</span>)
+}
