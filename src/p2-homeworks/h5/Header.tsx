@@ -8,7 +8,7 @@ type HeaderType = {
 
 
 function Header() {
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState(!false);
 
     return (<div className={s.page}>
         <nav className={menu ? s.navContainer : s.disable}>

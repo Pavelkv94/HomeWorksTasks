@@ -1,0 +1,8 @@
+.span {
+    margin: 15px;
+    background-color: rgb(255, 181, 173);
+    text-decoration: underline;
+    font-size: 18px;
+    cursor: text;
+    width: 200px;
+}
