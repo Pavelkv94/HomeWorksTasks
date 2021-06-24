@@ -11,28 +11,28 @@ export type ActionTypes =
 
 export const homeWorkReducer = (state: Array<HumanType>, action: ActionTypes): Array<HumanType> => { // need to fix any
     switch (action.type) {
-                case 'sort': {
-                    // need to fix
-                    const newArray = state.map(p => ({...p}));
-                    switch (action.payload) {
-                        case "up": {
-                            return newArray.sort((a, b) => a.name > b.name ? 1 : -1)
-                        }
-                        case "down": {
-                            return newArray.sort((a, b) => b.name > a.name ? 1 : -1)
-                        }
-                        default:{
-                            return newArray
-                        }
-                    }
+        case 'sort': {
+            // need to fix
+            const newArray = state.map(p => ({ ...p }));
+            switch (action.payload) {
+                case "up": {
+                    return newArray.sort((a, b) => a.name > b.name ? 1 : -1)
                 }
-                case 'check': {
-                    // need to fix
-                    return state.filter(p => p.age > action.payload)
+                case "down": {
+                    return newArray.sort((a, b) => b.name > a.name ? 1 : -1)
                 }
-                default:
-                    return state
+                default: {
+                    return newArray
+                }
             }
+        }
+        case 'check': {
+            // need to fix
+            return state.filter(p => p.age > action.payload)
+        }
+        default:
+            return state
+    }
 }
 
 const SortAC = (payload: 'up' | 'down') => {
@@ -48,4 +48,3 @@ const CheckAC = (payload: number) => {
         payload
     } as const
 }
-
