@@ -1,23 +1,37 @@
 .default {
-
-}
-
-.btnStyle {
     border: black 1px solid;
     margin-left: 5px;
     background-color: rgb(175, 243, 255);
     border-radius: 5px;
-    border:none;
+    border: none;
     box-shadow: 2px 2px 4px black;
+    margin: 5px;
 }
-.btnStyle:hover {
-background-color: aquamarine;
-transform: scale(1.2);
 
+.default:hover {
+    background-color: aquamarine;
+    transform: scale(1.2);
 }
-.btnStyle:focus {
+
+.default:focus {
     outline: none;
 }
-.btnStyle:active {
+
+.default:active {
     background-color: cornflowerblue;
+}
+
+.red {
+    color: red;
+    border: black 1px solid;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(255, 0, 0);
+    background-color: white;
+}
+
+.red:hover {
+    background-color: rgb(255, 127, 159);
+    transform: scale(1.2);
 }

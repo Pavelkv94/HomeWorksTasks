@@ -32,11 +32,11 @@
 .item a {
     text-decoration: none;
     color: rgb(8, 123, 255);
-    font-style: oblique;
 }
 
 .active {
     font-size: 1.05em;
+    font-style: italic;
 }
 
 .btn {
@@ -53,7 +53,8 @@
 
 .btn:hover {
     box-shadow: 0px 0px 10px rgb(33, 207, 111);
-font-size: 1.6em;}
+    font-size: 1.6em;
+}
 
 .btnContainer {
     display: flex;

@@ -1,13 +1,22 @@
 .superInput {
-
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgb(253, 244, 230);
 }
-
+.superInput:hover {
+    background-color: aqua;
+}
+.superInput:focus {
+    background-color: aqua;
+}
 .errorInput {
-    border: 2px solid lime;
-    border-radius: 5px;
-    background: rgb(255, 245, 155);
+    border: 3px solid red;
+    background: rgb(255, 187, 187);
 }
 
 .error {
-    color: rgb(32, 26, 26);
+    color: red;
 }

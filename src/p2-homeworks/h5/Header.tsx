@@ -12,15 +12,15 @@ function Header() {
 
     return (<div>
         <nav className={menu ? s.navContainer : s.disable}>
+            <div className={s.item} ><NavLink to="/pre-junior" activeClassName={s.active}> Pre-Junior</NavLink></div>
             <div className={s.item} ><NavLink to="/junior" activeClassName={s.active}> Junior</NavLink></div>
             <div className={s.item} ><NavLink to="/junior-plus" activeClassName={s.active}> Junior-Plus</NavLink></div>
-            <div className={s.item} ><NavLink to="/pre-junior" activeClassName={s.active}> Pre-Junior</NavLink></div>
-            <div className={s.item} ><NavLink to="/error" activeClassName={s.active}> Error</NavLink></div>
+            <div className={`${s.item} ${s.error}`} ><NavLink to="/error" activeClassName={s.active}> Error</NavLink></div>
         </nav>
-        <div className={s.btnContainer}> 
-        <button onClick={()=>{setMenu(!menu)}} className={s.btn}>&#8679; Menu &#8679;</button>
+        <div className={s.btnContainer}>
+            <button onClick={() => { setMenu(!menu) }} className={s.btn}>&#8679; Menu &#8679;</button>
         </div>
-        <hr/>
+        <hr />
     </div>
     );
 }
