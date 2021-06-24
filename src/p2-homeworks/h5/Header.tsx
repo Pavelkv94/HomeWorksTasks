@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import s from './HW5.module.css'
 
-type HeaderType = {
-    disable: boolean
-}
-
-
 function Header() {
     const [menu, setMenu] = useState(!false);
 
