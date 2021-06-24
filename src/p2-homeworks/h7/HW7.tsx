@@ -15,7 +15,7 @@ function HW7() {
             {/*should work (должно работать)*/}
             <div>
                 <SuperSelect
-                    options={arr}
+                    options={arr.map(o=>o)}
                     value={value}
                     onChangeOption={onChangeOption}
                 />
