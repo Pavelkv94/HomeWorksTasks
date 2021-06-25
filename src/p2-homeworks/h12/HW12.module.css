@@ -21,3 +21,9 @@
 .some-text {
     color: darkslateblue;
 }
+
+.radio {
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+}
